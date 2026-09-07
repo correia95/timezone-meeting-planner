@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#3454d1" />
+
+    <title>Time Zone Meeting Planner — find a time that works across time zones</title>
+    <meta
+      name="description"
+      content="Add the cities your team is in and slide through the day to find an hour that works for everyone. Daylight saving is handled automatically for the date you pick. Share a link and everyone sees the same plan. Free, runs in your browser."
+    />
+    <link rel="canonical" href="https://timezone-meeting-planner.correia95.workers.dev/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Time Zone Meeting Planner" />
+    <meta property="og:description" content="Find a meeting time that works across time zones. DST-aware, shareable link, no sign-up." />
+    <meta property="og:url" content="https://timezone-meeting-planner.correia95.workers.dev/" />
+    <meta property="og:image" content="https://timezone-meeting-planner.correia95.workers.dev/og.svg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Time Zone Meeting Planner" />
+    <meta name="twitter:description" content="Find a meeting time that works across time zones. DST-aware, shareable." />
+    <meta name="twitter:image" content="https://timezone-meeting-planner.correia95.workers.dev/og.svg" />
+
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Time Zone Meeting Planner",
+        "url": "https://timezone-meeting-planner.correia95.workers.dev/",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Any",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        "description": "Compare working hours across time zones and find a meeting time that suits everyone, with daylight-saving handled automatically."
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How do I find a meeting time that works across time zones?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Add each person's city, then slide through the day. The grid shows the local time in every city for each hour and colours it green when it falls in normal working hours, so you can pick a column that is green or amber everywhere."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does this handle daylight saving time?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Offsets are calculated for the exact date you choose using your browser's time zone database, so a meeting planned for a future month uses that month's rules, including weeks when countries have switched on different weekends."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I share the plan with my team?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. The city list, date and proposed time are stored in the page link. Copy it and send it, and everyone opening the link sees exactly the same grid."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is my data sent anywhere?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. The planner runs entirely in your browser and stores nothing on a server. The only place your selections are kept is the shareable link."
+            }
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <noscript>
+      <p style="text-align: center; padding: 20px">
+        This time zone meeting planner needs JavaScript. It shows a grid of local times across the
+        cities you choose so you can find an hour that falls in working hours for everyone, with
+        daylight saving handled automatically.
+      </p>
+    </noscript>
+  </body>
+</html>
